@@ -5,11 +5,27 @@
     font-family: "poppins", sans-serif;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e0e0e0;
+    background-image: url("Pinterest.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(6px);
+    pointer-events: none;
+}
 }
 .container{
     position: relative;
